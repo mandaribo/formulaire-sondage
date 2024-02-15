@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage: les téléséries</title>
+    <link rel="stylesheet" href="./CSS/sondage.css">
+</head>
+<body>
+    <header>
+        <h1>Sondage sur les séries TV</h1>
+    </header>
+    <form method="get" action="./Server/server.html" enctype="text/plain" target="_blank">
+        <fieldset>
+            <legend>À propos de toi</legend>
+                <label for="name">Prénom:</label>
+                <input type="name" id="name" name="name" required>
+                <br />
+                <label for="birthday">Date de naissance:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <br />
+                <label for="email">Courriel:</label>
+                <input type="email" id="email" name="email" required>
+                <br />
+                <label for="phone">Tel:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>ex: 123-456-7890</small>
+                <br />
+        </fieldset>
+        <fieldset>
+            <legend>Infos de base</legend>
+                <label for="doyouwatch">Est-ce que tu regardes des séries télé?</label>
+                <br />
+                <input type="radio" id="yes" name="doyouwatch" value="1">
+                <label for="yes">oui</label>
+                <br />
+                <input type="radio" id="no" name="doyouwatch" value="0">
+                <label for="no">non</label>
+                <br />
+                <label for="frequency">Si oui, combien de temps tu passes en regardant les séries par semaine?</label>
+                <br />
+                <input list="timesaweek">
+                <datalist id="timesaweek">
+                        <option value="moins d'une heure"></option>
+                        <option value="1-2 heures"></option>
+                        <option value="3-5 heures"></option>
+                        <option value="5-10 heures"></option>
+                        <option value="10-15 heures"></option>
+                        <option value="plus de 16 heures"></option>
+                </datalist>
+                <br />
+        </fieldset>
+        <fieldset>
+            <legend>Préférences</legend>
+                <label>Quels genres de séries TV tu prérères?</label>
+                <br />
+                <input type="checkbox" id="comedy" name="comedy">
+                <label for="comedy">Comédies</label>
+                <br />
+                <input type="checkbox" id="detective" name="detective">
+                <label for="detective">Détéctives/Policier</label>
+                <br />
+                <input type="checkbox" id="drama" name="drama">
+                <label for="drama">Dramatique</label>
+                <br />
+                <input type="checkbox" id="action" name="action">
+                <label for="action">Action/aventure</label>
+                <br />
+                <input type="checkbox" id="scifi" name="scifi">
+                <label for="scifi">Fantastique et science-fiction</label>
+                <br />
+                <input type="checkbox" id="history" name="history">
+                <label for="history">Historique</label>
+                <br />
+                <input type="checkbox" id="animation" name="animation">
+                <label for="animation">Animation</label>
+        </fieldset>
+        <fieldset>
+            <legend>T'as vu?</legend>
+                <table>
+                    <tr>
+                        <th><input type="checkbox" id="gameofthrones" name="gameofthrones"></th>
+                        <th>Game of Thrones</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" alt="Game of Thrones poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="sherlock" name="sherlock"></th>
+                        <th>Sherlock</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BMWEzNTFlMTQtMzhjOS00MzQ1LWJjNjgtY2RhMjFhYjQwYjIzXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" alt="Sherlock poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="breakingbad" name="breakingbad"></th>
+                        <th>Breaking Bad</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg" alt="Breaking Bad poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="strangerthings" name="strangerthings"></th>
+                        <th>Stranger Things</th>
+                        <th><img style="max-width: 150px;" src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==" alt="Stranger Things poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="howimet" name="howimet"></th>
+                        <th>How I Met Yout Mother</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_FMjpg_UX1000_.jpg" alt="How I Met Yout Mother poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="disenchantment" name="disenchantment"></th>
+                        <th>Disenchantment</th>
+                        <th><img style="max-width: 150px;" src="https://resizing.flixster.com/MWIQL9gVqkIYgDuZy0Ae2yyq4FE=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vMjAzMmQ5NWMtZjEyNy00YjQyLWJmMDUtOWYxOWQxYjQwZWEyLmpwZw==" alt="Disenchantment poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="hannibal" name="hannibal"></th>
+                        <th>Hannibal</th>
+                        <th><img style="max-width: 150px;" src="https://upload.wikimedia.org/wikipedia/en/8/85/Hannibal_season_1.png" alt="Hannibal poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="merlin" name="merlin"></th>
+                        <th>Merlin</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BZTBjYjM3ZjItZTI1MS00ODZhLWFhZDgtODgxMmMzN2JlOTExXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Merlin poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="goodomens" name="goodomens"></th>
+                        <th>Good Omens</th>
+                        <th><img style="max-width: 150px;" src="https://flxt.tmsimg.com/assets/p16137173_b_v13_ae.jpg" alt="Good Omens poster"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" id="doctorwho" name="doctorwho"></th>
+                        <th>Doctor Who</th>
+                        <th><img style="max-width: 150px;" src="https://m.media-amazon.com/images/M/MV5BZWJhYjFmZDEtNTVlYy00NGExLWJhZWItNTAxODY5YTc3MDFmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Doctor Who poster"></th>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>C'est quoi ta série préférée?</legend>
+            <label for="favoriteshow">Nom de la série</label>
+            <input type="text" id="favoriteshow" name="favoriteshow">
+            <br />
+            <label for="review">Écris une petite critique de la série:</label>
+            <br />
+            <textarea id="review" name="review" rows="4" placeholder="J'aime cette série parce que..."></textarea>
+        </fieldset>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../polices/Montserrat-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../polices/Montserrat-Italic.ttf);
+    font-style: italic;
+}
+*{
+    margin: 10px;
+    vertical-align: middle;
+    background-color: lavender;
+    font-family: Montserrat;
+    text-align: start;
+   
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 0px 5px #44176e, 0px 0px 10px #44176e, 0px 0px 10px #44176e,
+    0px 0px 20px #44176e;
+}
+
+small{
+    font-style: italic;
+}
+
+legend {
+    padding: 7px;
+    background:  #774b85;
+    color: white;
+    border-radius: 3px;
+}
+
+
+input{
+    caret-color: #b700ff;
+    font-style: italic;
+    border-color: #a96ab9;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 3px solid #a96ab9;
+}
+
+
+input[type=submit] {
+    background-color: #774b85;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+fieldset{
+    border-style: dotted;
+    border-radius: 4px;
+    border-color: #44176e;
+    min-width: 500px;
+    max-width: 700px;
+    margin:auto;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+textarea{
+    width: 90%;
+    border-radius: 5px;
+    caret-color: #44176e;
+    font-style: italic;
+    border-color: #a96ab9;
+    resize: none;
+}
+
+input[type=checkbox]{
+accent-color: #44176e;
+}
+
+input[type=radio]{
+accent-color: #44176e;
+}
+
+table{
+    width: 100%;
+}
+
